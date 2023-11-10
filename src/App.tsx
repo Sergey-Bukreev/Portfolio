@@ -1,12 +1,19 @@
 import './App.css';
 import styled from 'styled-components';
 import Header from "./layout/header/Header";
+import React from "react";
+import {Maine} from "./layout/sections/maine/Maine";
+
 
 
 function App() {
     return (
+<div className="App">
 
-            <Header />
+    <Header />
+    <Maine />
+</div>
+
 
     );
 }
