@@ -6,6 +6,7 @@ import {Maine} from "./layout/sections/maine/Maine";
 import {Skills} from "./layout/sections/skills/Skills";
 import {Works} from "./layout/sections/works/Works";
 import {Testimony} from "./layout/sections/testimony/Testimony";
+import {Contacts} from "./layout/sections/contacts/Contacts";
 
 
 
@@ -16,7 +17,8 @@ function App() {
                 <Maine />
                 <Skills />
                 <Works />
-                <Testimony />
+                <Testimony />`
+                <Contacts />
             </div>
 
 
