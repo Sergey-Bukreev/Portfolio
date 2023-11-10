@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Header from "./layout/header/Header";
 import React from "react";
 import {Maine} from "./layout/sections/maine/Maine";
+import {Skills} from "./layout/sections/skills/Skills";
 
 
 
@@ -12,6 +13,7 @@ function App() {
 
     <Header />
     <Maine />
+    <Skills />
 </div>
 
 
