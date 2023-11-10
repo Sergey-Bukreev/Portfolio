@@ -5,6 +5,7 @@ import React from "react";
 import {Maine} from "./layout/sections/maine/Maine";
 import {Skills} from "./layout/sections/skills/Skills";
 import {Works} from "./layout/sections/works/Works";
+import {Testimony} from "./layout/sections/testimony/Testimony";
 
 
 
@@ -15,6 +16,7 @@ function App() {
                 <Maine />
                 <Skills />
                 <Works />
+                <Testimony />
             </div>
 
 
