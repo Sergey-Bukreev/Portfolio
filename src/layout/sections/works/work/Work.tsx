@@ -19,9 +19,10 @@ export const Work = (props: WorkPropsType) => {
 };
 
 const StyledWork = styled.div`
-    background-color:salmon;
+    background-color:gray;
   max-width: 540px;
   width: 100%;
+  margin: 10px;
 `
 const Image = styled.img`
 width: 100%;

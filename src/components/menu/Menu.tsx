@@ -25,6 +25,7 @@ const StyledMenu = styled.nav`
    display: flex;
    gap: 30px;
    justify-content: center;
+   color: black;
  }
 `
 

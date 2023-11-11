@@ -7,7 +7,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
     return (
         <StyledFooter>
            <FlexWrapper direction={"column"} align={"center"}>
-               <Name>Svetlana</Name>
+               <Name>Sergey</Name>
                <SocialList>
                    <SocialItem>
                        <SocialLink>
@@ -31,7 +31,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
                    </SocialItem>
 
                </SocialList>
-               <Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</Copyright>
+               <Copyright>© 2023 Sergey Bukreev, All Rights Reserved.</Copyright>
            </FlexWrapper>
 
         </StyledFooter>

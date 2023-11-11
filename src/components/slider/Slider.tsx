@@ -21,7 +21,7 @@ import {FlexWrapper} from "../FlexWrapper";
 };
 
 const StyledSlider = styled.div`
-border: 1px solid red;
+border: 1px solid gray;
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -40,6 +40,6 @@ span {
   width: 20px;
   height: 20px;
   margin: 5px;
-  background-color: maroon;
+  background-color: gray;
 }
 `

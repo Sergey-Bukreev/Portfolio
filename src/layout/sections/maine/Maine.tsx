@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import MainePhoto from "./../../../assets/images/MainePhoto.jpeg"
+import MainePhoto from "./../../../assets/images/photo-2.webp"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 export const Maine = () => {
     return (
@@ -8,8 +8,8 @@ export const Maine = () => {
             <FlexWrapper align={"center"} justify={"space-around"}>
                 <div>
                     <span>Hi There</span>
-                    <h2>I am Svetlana Dyabla</h2>
-                    <h2>A Web Developer</h2>
+                    <h2>My name is Sergey Bukreev</h2>
+                    <h2>I build things for WEB</h2>
                 </div>
                 <Photo src={MainePhoto}/>
             </FlexWrapper>
@@ -18,12 +18,14 @@ export const Maine = () => {
 };
 
 const Photo = styled.img`
-width: 350px;
-  height: 430px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
   object-fit: cover;
+  border: black 1px solid;
 `
 
 const StyledMaine = styled.div`
-min-height: 100vh;
+  min-height: 60vh;
   background-color: snow;
 `

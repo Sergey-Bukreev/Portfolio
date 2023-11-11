@@ -35,6 +35,6 @@ export const Skills = () => {
 };
 
 const StyledSkills  = styled.section`
-background-color: floralwhite;
+background-color: snow;
 
 `

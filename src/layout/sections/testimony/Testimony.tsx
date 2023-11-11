@@ -20,6 +20,6 @@ export const Testimony = () => {
 
 const StyledTestimony = styled.section`
 min-height: 100vh;
-  background-color: blueviolet;
+  background-color: snow;
   min-height: 50vh;
 `
