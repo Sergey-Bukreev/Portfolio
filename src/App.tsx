@@ -10,6 +10,7 @@ import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Slogan} from "./layout/sections/slogan/Slogan";
 import {Footer} from "./layout/footer/Footer";
 import {AboutMe} from "./layout/sections/aboutme/AboutMe";
+import {TechStack} from "./layout/sections/techStack/TechStack";
 
 
 
@@ -19,11 +20,11 @@ function App() {
                 <Header />
                 <Maine />
                 <AboutMe />
-                <Skills />
+                <TechStack />
                 <Works />
                 <Testimony />`
                 <Contacts />
-                <Slogan />`
+                <Slogan />
                 <Footer />
             </div>
 

@@ -23,7 +23,7 @@ import {Card} from "./card/Card";
     );
 };
 
-const StyledAboutMe = styled.div`
+const StyledAboutMe = styled.section`
 background-color: snow;
   margin: 10px;
   

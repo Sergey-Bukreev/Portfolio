@@ -29,7 +29,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
     );
 };
 
-const StyledTechStack = styled.div`
-min-height: 30vh;
+const StyledTechStack = styled.section`
+min-height: 60vh;
 `
 const Text = styled.span``

@@ -25,7 +25,7 @@ const Photo = styled.img`
   border: black 1px solid;
 `
 
-const StyledMaine = styled.div`
+const StyledMaine = styled.section`
   min-height: 60vh;
   background-color: snow;
 `
