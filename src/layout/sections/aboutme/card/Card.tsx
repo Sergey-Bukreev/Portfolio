@@ -34,10 +34,12 @@ border: black 1px solid;
 const UpElementTitle = styled.p``
 const UpElementText = styled.span`
   font-size: 12px;
+  
 `
 const DownElementTitle = styled.p`
   font-size: 12px;
 `
+
 const DownElementText = styled.span`
   font-size: 12px;
 `

@@ -1,15 +1,17 @@
 import React from 'react';
 import styled from "styled-components";
+import {Theme} from "../../../../styles/Theme";
+import {Link} from "../../../../components/Link";
 
 
-export const Menu = (props:{menuItems: Array<string>}) => {
+export const TabMenu = (props:{menuItems: Array<string>}) => {
     return (
         <StyledMenu>
             <ul>
                 {props.menuItems.map( (item, index)=> {
-                    return <li key={index}>
-                        <a href="">{item}</a>
-                    </li>
+                    return <ListItem key={index}>
+                        <Link href="">{item}</Link>
+                    </ListItem>
 
                 })
 }
@@ -28,5 +30,8 @@ const StyledMenu = styled.nav`
    color: black;
  }
 `
+const ListItem = styled.li`
 
-export default Menu;
+  
+`
+

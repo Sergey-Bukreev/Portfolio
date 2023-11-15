@@ -24,13 +24,16 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: ${Theme.colors.font};
   }
   ul {
     list-style: none;
   }
   button {
     background-color: unset;
-    border: none;
+    border: none; 
+    cursor: pointer;
+    color: ${Theme.colors.font};
   }
   
   section {
@@ -43,5 +46,15 @@ background-color: ${Theme.colors.primaryBg};
   section:nth-of-type(even) {
     background-color: ${Theme.colors.secondaryBg};
   }
-  
+  h3 {
+    font-family: Josefin Sans,serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
 `
