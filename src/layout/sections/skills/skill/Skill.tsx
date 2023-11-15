@@ -38,7 +38,7 @@ text-align: center;
  
  
 `
-const IconWrapper=styled.div`
+ export const IconWrapper=styled.div`
 position: relative;
   &::before {
     content: "";
