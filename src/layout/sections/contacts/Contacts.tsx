@@ -2,33 +2,60 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {StyledButton} from "../../../components/Button";
+import {Container} from "../../../components/Container";
+import {Theme} from "../../../styles/Theme";
 
 export const Contacts = () => {
     return (
         <StyledContacts>
-            <SectionTitle>Contacts</SectionTitle>
-            <StyledForm>
-                <Field placeholder={"Name"} />
-                <Field placeholder={"Subject"} />
-                <Field placeholder={"Massage"} as={"textarea"}/>
-                <StyledButton type={"submit"}>Contact Me</StyledButton>
+           <Container>
+               <SectionTitle>Contacts</SectionTitle>
+               <StyledForm>
+                   <Field placeholder={"Name"} />
+                   <Field placeholder={"Subject"} />
+                   <Field placeholder={"Massage"} as={"textarea"}/>
+                   <StyledButton type={"submit"}>Send Message</StyledButton>
 
-            </StyledForm>
+               </StyledForm>
+           </Container>
         </StyledContacts>
     );
 };
 
 const StyledContacts = styled.section`
-  min-height: 50vh;
-  background-color: snow;
+  
 `
 
 const StyledForm = styled.form`
-max-width: 500px;
+max-width: 540px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 16px;
   margin: 0 auto;
+  textarea {
+    resize: none;
+    height: 155px;
+  }
 `
-const Field = styled.input``
+const Field = styled.input`
+width: 100%;
+  background-color: ${Theme.colors.secondaryBg};
+  border: 1px solid ${Theme.colors.borderColor};
+  padding: 7px 15px;
+  font-family: "Poppins",serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  
+  color: ${Theme.colors.font};
+  
+  &::placeholder {
+  color: ${Theme.colors.placeholderColor};
+    text-transform: capitalize;
+}
+  &:focus-visible {
+    outline: 1px solid ${Theme.colors.borderColor};
+  }
+`
