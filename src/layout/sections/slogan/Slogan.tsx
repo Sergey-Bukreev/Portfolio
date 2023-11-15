@@ -2,12 +2,19 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {StyledButton} from "../../../components/Button";
+import {Container} from "../../../components/Container";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 export const Slogan = () => {
     return (
         <StyledSlogan>
-            <SectionTitle>I am Available for Freelance</SectionTitle>
-            <StyledButton>Hire Me</StyledButton>
+           <Container>
+               <FlexWrapper direction={"column"} align={"center"}>
+                   <SectionTitle>I am Available for Freelance</SectionTitle>
+                   <StyledButton>Hire Me</StyledButton>
+               </FlexWrapper>
+
+           </Container>
 
         </StyledSlogan>
     );
