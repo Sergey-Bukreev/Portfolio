@@ -17,9 +17,9 @@ type CardPropsType ={
                 <UpElementText>{props.description}</UpElementText>
             </FlexWrapper>
             <FlexWrapper align={"center"}>
-                <Icon iconId={"building"} />
+                <Icon iconId={"building"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
                 <DownElementTitle>{props.place}</DownElementTitle>
-                <Icon iconId={"calendar"} />
+                <Icon iconId={"calendar"} width={"16"} height={"12"} viewBox={"0, 0, 16, 12"} />
                 <DownElementText>{props.period}</DownElementText>
             </FlexWrapper>
         </StyledCard>

@@ -5,7 +5,9 @@ export const Theme = {
         accent:" #7572D5",
         font: "#FFF",
         borderColor: "#4A4A4A",
-        placeholderColor: "495057"
+        placeholderColor: "495057",
+        fontSecond: "linear-gradient(to left, #360dde, #0dbad7)",
+        fontThird: "#A7A7A7"
     }
 
 }
