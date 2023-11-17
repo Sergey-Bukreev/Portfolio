@@ -23,7 +23,7 @@ export const Testimony = () => {
 };
 
 const StyledTestimony = styled.section`
-  background-color: snow;
+  
   min-height: 50vh;
   ${IconWrapper} {
     margin: 24px 0 72px;

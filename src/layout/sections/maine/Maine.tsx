@@ -3,22 +3,22 @@ import styled from "styled-components";
 import MainePhoto from "./../../../assets/images/photo-2.webp"
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
+import {Theme} from "../../../styles/Theme";
 
 export const Maine = () => {
     return (
         <StyledMaine>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-around"}>
+                <FlexWrapper align={"center"} justify={"space-between"}>
                     <div>
-                        <Text>Hi There</Text>
-                        <Text>My name is <span>Sergey Bukreev</span></Text>
+                        <SmallText>Hi There</SmallText>
+                        <Name>I am <span>Sergey Bukreev</span></Name>
 
-                        <Text>I build things for WEB</Text>
+                        <Text>A Web Developer</Text>
                     </div>
                     <PhotoWrapper>
                         <Photo src={MainePhoto}/>
                     </PhotoWrapper>
-
 
                 </FlexWrapper>
             </Container>
@@ -29,40 +29,65 @@ export const Maine = () => {
 
 
 const StyledMaine = styled.section`
-  min-height: 60vh;
-  background-color: snow;
   display: flex;
 `
 
 const PhotoWrapper = styled.div`
-  background: -webkit-linear-gradient(left top, #360dde 0%, #0dbad7 100%);
-  width: 370px;
-  height: 370px;
-  border-radius: 50%;
-  padding: 10px;
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: "";
+    width: 360px;
+    height: 470px;
+    border: 5px solid ${Theme.colors.accent};
+    
+    position: absolute;
+    top: -24px;
+    left: 24px;
+    z-index: -1;
+  }
 
 `
 
 
 const Photo = styled.img`
   width: 350px;
-  height: 350px;
-  border-radius: 50%;
+  height: 430px;
   object-fit: cover;
- 
 `
 
 const Text = styled.h2`
   font-family: Poppins,serif;
-  font-size: 38px;
-  font-style: normal;
+  font-size: 27px;
+  font-weight: 400;
+  
+  
+  
+`
+const Name = styled.h2`
+font-family: Josefin Sans, serif;
+  font-size: 50px;
   font-weight: 700;
-  line-height: 70px; /* 120.69% */
-  letter-spacing: -1px;
+ letter-spacing: 0.05em;
+  margin: 10px 0;
+  
   span {
-    background: linear-gradient(to left, #360dde, #0dbad7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 20px;
+      background-color: ${Theme.colors.accent};
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      
+    }
   }
 `
-
+const SmallText = styled.h2`
+font-size: 14px ;
+  font-weight: 400;
+`
