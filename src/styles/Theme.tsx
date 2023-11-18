@@ -8,7 +8,11 @@ export const Theme = {
         placeholderColor: "495057",
         fontSecond: "linear-gradient(to left, #360dde, #0dbad7)",
         fontThird: "#A7A7A7"
-    }
+    },
 
+    media: {
+       tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)"
+    }
 }
 

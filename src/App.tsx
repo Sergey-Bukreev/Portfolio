@@ -1,6 +1,5 @@
 import './App.css';
 import styled from 'styled-components';
-import Header from "./layout/header/Header";
 import React from "react";
 import {Maine} from "./layout/sections/maine/Maine";
 import {Skills} from "./layout/sections/skills/Skills";
@@ -9,6 +8,7 @@ import {Testimony} from "./layout/sections/testimony/Testimony";
 import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Slogan} from "./layout/sections/slogan/Slogan";
 import {Footer} from "./layout/footer/Footer";
+import {Header} from "./layout/header/Header";
 
 
 
