@@ -20,7 +20,7 @@ function App() {
                 <Maine />
                 <Skills />
                 <Works />
-                <Testimony />`
+                <Testimony />
                 <Contacts />
                 <Slogan />
                 <Footer />
