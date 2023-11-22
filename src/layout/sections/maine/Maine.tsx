@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from "./Maine_Styles"
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 
 export const Maine:React.FC = () => {
@@ -28,9 +29,12 @@ export const Maine:React.FC = () => {
                             />
                         </S.Text>
                     </div>
-                    <S.PhotoWrapper>
-                        <S.Photo src={MainePhoto}/>
-                    </S.PhotoWrapper>
+                    <Tilt>
+                        <S.PhotoWrapper>
+                            <S.Photo src={MainePhoto}/>
+                        </S.PhotoWrapper>
+                    </Tilt>
+
 
                 </FlexWrapper>
             </Container>
