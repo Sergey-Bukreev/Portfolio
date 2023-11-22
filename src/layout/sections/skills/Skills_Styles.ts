@@ -37,7 +37,7 @@ position: relative;
 `
 
 const Skills  = styled.section`
-    
+    position: relative;
 `
 export const  S = {
     Skill,

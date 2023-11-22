@@ -9,6 +9,7 @@ import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Slogan} from "./layout/sections/slogan/Slogan";
 import {Footer} from "./layout/footer/Footer";
 import {Header} from "./layout/header/Header";
+import {Particle} from "./components/particle/Particle";
 
 
 
@@ -16,6 +17,8 @@ import {Header} from "./layout/header/Header";
 function App() {
     return (
             <div className="App">
+                <Particle />
+
                 <Header />
                 <Maine />
                 <Skills />

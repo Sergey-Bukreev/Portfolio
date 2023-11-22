@@ -5,6 +5,7 @@ import {font} from "../../styles/Common";
 const Footer = styled.footer`
   background-color: ${Theme.colors.primaryBg};
   padding: 40px 0 ; 
+  position: relative;
 `
 
 const Name = styled.span`
