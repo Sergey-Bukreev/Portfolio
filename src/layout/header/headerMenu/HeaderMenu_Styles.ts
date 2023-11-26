@@ -1,13 +1,7 @@
 import styled, {css} from "styled-components";
 import {Theme} from "../../../styles/Theme";
+import {Link} from "react-scroll";
 
-const Link = styled.a`
-  text-align: center;
-  font-family: Josefin Sans,serif;
-  font-size: 30px;
-  font-weight: 400;
-  color: transparent;
-`
 const Mask = styled.span`
 position: absolute;
   top: 0;
@@ -26,36 +20,47 @@ position: absolute;
     }
   }
 `
-const ListItem = styled.li`
-position: relative;
- &::before {
-   content: "";
-   display: inline-block;
-   height: 3px;
-   background-color: ${Theme.colors.accent} ;
-   position: absolute;
-   top: 50%;
-   left: -10px;
-   right: -10px;
-   z-index: 1;
-   transform: scale(0);
- }
- &:hover {
-   &::before {
-     transform: scale(1);
-   }
- }
-  
-  &:hover {
+
+const NavLink = styled(Link)`
+  text-align: center;
+  font-family: Josefin Sans,serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: transparent;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    background-color: ${Theme.colors.accent} ;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    right: -10px;
+    z-index: 1;
+    transform: scale(0);
+  }
+  &:hover, &.active {
+    &::before {
+      transform: scale(1);
+    }
+  }
+
+  &:hover,&.active {
     ${Mask} {
       transform: skewX(12deg) translateX(5px);
       color: ${Theme.colors.font};
       & + ${Mask} {
         transform: skewX(12deg) translateX(-5px);
-    }
-   
+      }
+
     }
   }
+`
+
+const ListItem = styled.li`
+position: relative;
+
 `
 
 // Mobile Menu
@@ -164,7 +169,7 @@ const StyledDesktopMenu = styled.nav`
   }
 `
 export const S = {
-    Link,
+    NavLink,
     ListItem,
     Mask,
     MobileMenuWrapper,
