@@ -25,6 +25,7 @@ font-weight: 400;
     height: 10px;
     width: 50%;
     background-color: ${Theme.colors.accent};
+    transition: ${Theme.animation.transition};
     
     position: absolute;
     bottom: 0;

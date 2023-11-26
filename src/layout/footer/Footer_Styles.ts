@@ -30,6 +30,7 @@ border-radius: 50%;
   justify-content: center;
   align-items: center;
   color: ${Theme.colors.accent};
+  transition: ${Theme.animation.transition};
   
   &:hover {
     color: ${Theme.colors.primaryBg};

@@ -11,6 +11,7 @@ position: absolute;
   overflow: hidden;
   
   color:${Theme.colors.accent};
+  transition: ${Theme.animation.transition};
   
   & + & {
     top:50%;
@@ -39,6 +40,7 @@ const NavLink = styled(Link)`
     right: -10px;
     z-index: 1;
     transform: scale(0);
+    transition: ${Theme.animation.transition};
   }
   &:hover, &.active {
     &::before {
@@ -81,12 +83,14 @@ const MobileMenuWrapper = styled.div<{isOpen:boolean}>`
   bottom: 0;
   right: 0;
   z-index: 99999;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition:${Theme.animation.transition};
   
   ${props => props.isOpen && css<{isOpen:boolean}>`
-  display: flex;
-    justify-content: center;
-    align-items: center;
+    transform: translateY(0);
   `}
   
   ul {
