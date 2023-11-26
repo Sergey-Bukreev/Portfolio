@@ -11,11 +11,11 @@ const Works = styled.section`
     }
 `
 const Work = styled.div`
-    background-color:${Theme.colors.secondaryBg};
-  
-  width: 330px;
- 
-  flex-grow: 1;
+  //   background-color:${Theme.colors.secondaryBg};
+  //
+  // width: 330px;
+  //
+  // flex-grow: 1;
   ${Link} {
     padding: 10px 0;
     & + ${Link} {

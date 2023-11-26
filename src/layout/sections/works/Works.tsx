@@ -7,6 +7,7 @@ import timerImg from "./../../../assets/images/Photo2.png"
 import {Container} from "../../../components/Container";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
 import {S} from "./Work_Styles"
+import {AnimatePresence, motion} from "framer-motion";
 
 const tabsItems:Array<{status: "all" | "react" | "landing" | "spa", title: string}> = [
     {
@@ -33,14 +34,17 @@ const workData =[
         title : "Social Network",
         src: socialImg,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        type: "spa"
+        type: "spa",
+        id: 1
 
     },
     {
         title : "Timer",
         src: timerImg,
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        type : "react"
+        type : "react",
+        id:2
+
     }
 ]
 const worksItems = ["ALL", "Landing Page", "React", "SPA"]
@@ -71,9 +75,22 @@ export const Works:React.FC = () => {
                 <TabMenu TabsItems={tabsItems}
                          changeFilterStatus={changeFilterStatus} currentFilterStatus={currentFilterStatus}/>
                 <FlexWrapper justify={"space-between"} wrap={"wrap"} align={"flex-start"}>
-                    {filteredWorks.map((w,index)=>{
-                        return <Work title={w.title} srs={w.src} text={w.text} key={index}/>
-                    })}
+                    <AnimatePresence>
+                        {filteredWorks.map((w,index)=>{
+                            return (
+                                <motion.div style={{width:"330px", flexGrow: 1, maxWidth:"540px"}}
+                                            initial={{ opacity: 0, scale: 0.5 }}
+                                            animate={{ opacity: 1, scale: 1 }}
+                                            transition={{ duration: 0.5 }}
+                                            key={w.id}
+                                            layout={true}>
+                                <Work title={w.title} srs={w.src} text={w.text} key={w.id}/>
+                                </motion.div>
+                            )
+                                })}
+
+
+                    </AnimatePresence>
                 </FlexWrapper>
             </Container>
         </S.Works>
